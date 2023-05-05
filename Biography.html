@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+img {
+  border: 3px solid deeppink;
+}
+html {
+  background: url(background.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+body {
+  color: black;
+}
+
+.multicolortext {
+        background-image: linear-gradient(to left, deeppink, lightpink, hotpink);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+	  
+</style>
+<body>
+<audio id="myAudio">
+
+
+  <source src="song5.mp3" type="audio/mpeg">
+
+</audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+<center>
+<img src="Aqilah.jpeg" width="300" height="300" >
+<h1 style ="background-color:darkslateblue; font-family:verdana; text-align: center;" >
+<span class="multicolortext">MY BIOGRAPHY</span>
+</h1>
+<center>
+<p1 style= "color: white" > Hi! My name is Nur Aqilah Binti Hussin. I'm 21st years old. I'm from Kelantan. I went to SK Kampung Delima for primary school and continue my secondary school in SMK Wakaf Bharu before I got into Gua Musang Science School which is one of the boarding schools in Malaysia. I love to eat "tomyam" and my favourite drink is green tea. </p1>
+</body>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+</script>
+</html>

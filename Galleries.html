@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Image Gallery</title>
+  <meta name="description" content="Responsive Image Gallery">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  
+  <style type="text/css">
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+}
+
+html {
+  background: url(background.jpg) no-repeat center fixed;
+  background-size: cover;
+}
+
+.multicolortext {
+        background-image: linear-gradient(to left, deeppink, lightpink, hotpink);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+  
+#gallery {
+   line-height:0;
+   -webkit-column-count:5; /* split it into 5 columns */
+   -webkit-column-gap:5px; /* give it a 5px gap between columns */
+   -moz-column-count:5;
+   -moz-column-gap:5px;
+   column-count:5;
+   column-gap:5px;
+}
+
+#gallery img {
+   width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px; /* to match column gap */
+   border: 3px solid var(--white);
+   border-radius: 20%;
+   padding: 7px;
+   margin: 20px auto;
+}
+
+@media (max-width: 1200px) {
+   #gallery {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+	
+   }
+}
+
+@media (max-width: 1000px) {
+   #gallery {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+	
+   }
+}
+
+@media (max-width: 800px) {
+   #gallery {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+	
+   }
+}
+
+@media (max-width: 400px) {
+   #gallery {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+	
+   }
+}
+
+filter: grayscale(100%);
+
+#gallery img:hover {
+   filter:none;
+}
+
+transition: filter 2s;
+
+
+  </style>
+</head>
+<body>
+<center>
+<audio id="myAudio">
+
+  <source src="song1.mp3" type="audio/mpeg">
+  </audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+<h1 style = "font-family: verdana; font-size : 1000%;"> 
+ <span class="multicolortext">MY GALLERY!</span>
+</h1>
+<div id="gallery">
+  
+   <img src="1.jpg">
+   <img src="2.jpg">
+   <img src="3.jpg">
+   <img src="4.jpg">
+   <img src="pic.jpeg">
+   <img src="Aqilah.jpeg">
+   <img src="5.jpg">
+   <img src="6.jpg">
+   <img src="7.jpg">
+   <img src="8.jpg">
+   <img src="9.jpg">
+   <img src="10.jpg">
+   <img src="11.jpg">
+   <img src="12.jpg">
+   <img src="13.jpg">
+   <img src="14.jpg">
+  
+  
+  </div>
+ 
+ </body>
+ <script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+</script>
+</html>

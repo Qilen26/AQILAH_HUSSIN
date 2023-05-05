@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.multicolortext {
+        background-image: linear-gradient(to left, deeppink, lightpink, hotpink);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+</style>
+</head>
+<body style="background: linear-gradient(120deg, mediumpurple, violet); " >
+
+<h2 style = "font-family: verdana; font-size : 900%;"> <center>
+ <span class="multicolortext">DOWNLOAD</span>
+
+<audio id="myAudio">
+
+  <source src="song4.mp3" type="audio/mpeg">
+
+</audio> 
+<button onclick="playAudio()" type="button"><i class='fa fa-headphones' style='font-size:24px'></i></button>
+
+</h2>
+<center>
+<div class="row"><center>
+  <div class="column" style="background-color:mediumpurple;">
+    
+<a href="resume.jpg" download>
+  <img src="resume.jpg" alt="resume" width="200" height="200">
+  <p>RESUME</p>
+</a> 
+  </div>
+  <div class="column" style="background-color: mediumpurple;"><center>
+    
+<a href="timetable.jpg" download>
+  <img src="timetable.jpg" alt="timetable" width="400" height="160">
+  <p>TIMETABLE</p>
+</a> 
+  
+</div>
+
+</body>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+}
+</script>
+</html>
